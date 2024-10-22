@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS Example with Sidebar</title>
+    <style>
+        body{
+           font-family: 'Times New Roman', Times, serif;
+            color: #343030;
+            line-height: 2.0em;
+            background-color: #ed8181;
+        }
+        header{
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(235, 152, 74);
+            margin: auto;
+            display: flex;
+            justify-content:space-between ;
+            align-items: center;
+        }
+
+        .logo{
+            width: 150px;
+            height: auto;
+        }
+
+        header image{
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            border-radius: 50%;
+         }
+        .container{
+            display: flex;
+        }
+        .sidebar {
+            background-color: rgb(161, 215, 215);
+            padding: 50;
+            width: 200px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0, 1);
+        }
+        .sidebar li{
+            font-size: x-large;
+            background-color: rgb(237, 186, 186);
+            
+        }
+        .sidebar ul{
+            list-style: none;
+            padding: 15px;
+        }
+        .sidebar li{
+            margin-bottom: 20px;
+        }
+        .sidebar a{
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            color: #a36565;
+        }
+        .sidebar a :hover{
+            background-color: #57abb9;
+        
+        }
+        
+         main{
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #80edc5;
+        }
+        section{
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 1em;
+        }
+        
+        footer{
+            background-color:#333
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px
+            color: #fff
+        }
+        @media (max-width: 768px){
+
+        }
+        .container{
+            flex-direction: column;
+        }
+        .sidebar{
+            width: 100%;
+        }
+        /* Logo Styling */
+        .logo {
+            width: 150px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        /* Navigation Styling */
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links li {
+            margin-right: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #343030; /* Match body text color */
+            font-size: 1.2em;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ed8181;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <!--first logo-->
+        <img src="logo.jpg" alt="Left Logo" class="logo">  <!-- Logo image code -->
+
+        <!--title in the center-->
+        <div class="header-title">
+            <h1>Cebu Technological University</h1>
+        </div>
+        
+            <!--second logo-->
+            <img src="asean.jpg" alt="Right Logo" class="logo">
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Introduction</h2>
+                <p>This is sample website styled using <em>Internal CSS</em></p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <P>&copy; 2024 My Website</P>
+    </footer> <br>
+</body>
+</html>
